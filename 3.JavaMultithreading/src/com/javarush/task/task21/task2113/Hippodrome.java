@@ -10,11 +10,19 @@ public class Hippodrome {
 
 
 
-    public   ArrayList<Horse> horses = new ArrayList<>();
+    public    ArrayList<Horse> horses = new ArrayList<>();
     public static Hippodrome game;
 
+
+    public Hippodrome(ArrayList<Horse> horses) {
+        this.horses = horses;
+    }
+
+
+
+
     public static void main (String[] args) throws InterruptedException{
-        game = new Hippodrome();
+        game = new Hippodrome(new ArrayList<Horse>());
         Horse pegas = new Horse("Pegas",3,0);
         Horse ralph = new Horse("Ralph",3,0);
         Horse ronald = new Horse("Ronald",3,0);
@@ -31,7 +39,7 @@ public class Hippodrome {
 
 
 
-    public void run() throws InterruptedException {
+     void run() throws InterruptedException {
         for (int i = 1; i <= 100; i++) {
             move();
             print();
@@ -40,12 +48,12 @@ public class Hippodrome {
     }
 
 
-    public void move() {
+     void move() {
 
 
     }
 
-    public void print() {
+     void print() {
 
     }
 
