@@ -2,15 +2,11 @@ package com.javarush.task.task21.task2113;
 
 import java.util.ArrayList;
 
-
-/**
- * Created by Me on 15.03.2017.
- */
 public class Hippodrome {
 
 
 
-    public    ArrayList<Horse> horses = new ArrayList<>();
+    private     ArrayList<Horse> horses = new ArrayList<>();
     public static Hippodrome game;
 
 
@@ -21,7 +17,7 @@ public class Hippodrome {
 
 
 
-    public static void main (String[] args) throws InterruptedException{
+    public static void main (String[] args) {
         game = new Hippodrome(new ArrayList<Horse>());
         Horse pegas = new Horse("Pegas",3,0);
         Horse ralph = new Horse("Ralph",3,0);
